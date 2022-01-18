@@ -1,0 +1,63 @@
+Function Prompt { 'CestacA: '+ (Get-Location) + '> '}                                                                   
+
+   2 New-Item P:\Documenten\ -ItemType Directory                                                                             
+
+   3 New-Item P:\Documenten\Test -ItemType Directory                                                                         
+
+   4 New-Item P:\Documenten\Notulen -ItemType Directory                                                                      
+
+   5 New-Item P:\Documenten\Bijlagen -ItemType Directory                                                                     
+
+   6 New-Item P:\Documenten\Spreadsheets -ItemType Directory                                                                 
+
+   7 New-Item P:\Documenten\Spreadsheets\Kosten -ItemType Directory                                                          
+
+   8 New-Item P:\Documenten\Spreadsheets\Uren -ItemType Directory                                                            
+
+   9 New-Item P:\Folders -ItemType Directory                                                                                 
+
+  10 New-Item P:\Folders\Test -ItemType Directory                                                                            
+
+  11 New-Item P:\Folders\Notulen -ItemType Directory                                                                         
+
+  12 New-Item P:\Folders\Amsterdam -ItemType Directory                                                                       
+
+  13 New-Item P:\Folders\Rotterdam -ItemType Directory                                                                       
+
+  14 New-Item P:\Folders\Musici -ItemType Directory                                                                          
+
+  15 New-Item P:\Folders\Musici\Beschikbaarheid -ItemType Directory                                                          
+
+  16 New-Item P:\Folders\Musici\Internationaal -ItemType Directory                                                           
+
+  17 New-Item P:\Documenten\Notulen\readme.txt -ItemType file -value 'Uitsluitend bedoeld voor notulen'                      
+
+  18 New-Item P:\Folders\Notulen\readme.txt -ItemType file -value 'Uitsluitend bedoeld voor notulen'                         
+
+  19 New-Item P:\backup -ItemType Directory                                                                                  
+
+  20 Copy-Item P:\Documenten -Destination P:\backup -Recurse                                                                 
+
+  21 Copy-Item P:\Folders -Destination P:\backup -Recurse                                                                    
+
+  22 Get-ChildItem P:\ * -Recurse                                                                                            
+
+  23 $a = "P:\Documenten"                                                                                                    
+
+  24 Get-Item $a                                                                                                             
+
+  25 $b = "P:\Folders"                                                                                                       
+
+  26 Get-Item $b                                                                                                             
+
+  27 Get-WmiObject win32_logicaldisk                                                                                         
+
+  28 Get-ChildItem -Path P:\ *.txt -Recurse                                                                                  
+
+  29 mspaint                                                                                                                 
+
+  30 Get-Alias -Definition Get-Process                                                                                       
+
+  31 gps mspaint                                                                                                             
+
+  32 Get-EventLog -LogName System -EntryType Information -Newest 5   
